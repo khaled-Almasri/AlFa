@@ -1,0 +1,32 @@
+# ===============================
+# Server
+# ===============================
+server:
+  servlet:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+
+# ===============================
+# Datenbank
+# ===============================
+spring:
+  datasource:
+    url: jdbc:mariadb://localhost:3307/bokerfi
+    username: bokerfi
+    password: bokerfi
+    driver-class-name: org.mariadb.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+
+# ===============================
+# Logging
+# ===============================
+logging:
+  level:
+    root: INFO
+    de.unibremen.cs.swp.bokerfi: INFO

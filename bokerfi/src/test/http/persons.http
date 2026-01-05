@@ -1,0 +1,24 @@
+### GET alle Personen
+
+GET http://localhost:8080/api/persons
+Accept: application/json
+
+### POST gültige Person
+POST http://localhost:8080/api/persons
+Content-Type: application/json
+
+{
+  "firstName": "Max",
+  "lastName": "Mustermann",
+  "email": "max@test.de"
+}
+
+### POST ungültige Person (Validation)
+POST http://localhost:8080/api/persons
+Content-Type: application/json
+
+{
+  "firstName": "",
+  "lastName": "",
+  "email": "abc"
+}

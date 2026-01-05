@@ -1,0 +1,16 @@
+services:
+  mariadb:
+    image: mariadb:latest
+    restart: unless-stopped
+    environment:
+      MARIADB_ROOT_PASSWORD: eingutes
+      MARIADB_DATABASE: bokerfi
+      MARIADB_USER: bokerfi
+      MARIADB_PASSWORD: bokerfi
+    ports:
+      - "3307:3306"
+    volumes:
+      - mariadb_data:/var/lib/mysql
+
+volumes:
+  mariadb_data:
