@@ -1,3 +1,644 @@
+POST http://localhost:8080/api/reservations
+Content-Type: application/json
+Content-Length: 112
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "timeSlot": "Dienstag 10-12 Uhr",
+  "personUuid": 797572595219952560,
+  "facilityUuid": 797565712985211066
+}
+
+<> 2026-01-09T223241.404.json
+
+###
+
+POST http://localhost:8080/api/reservations
+Content-Type: application/json
+Content-Length: 110
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "timeSlot": "Montag 08-10 Uhr",
+  "personUuid": 797577230142833606,
+  "facilityUuid": 797577087159009401
+}
+
+<> 2026-01-09T222738.201.json
+
+###
+
+POST http://localhost:8080/api/persons
+Content-Type: application/json
+Content-Length: 78
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "firstName": "Max",
+  "lastName": "Mustermann",
+  "email": "max@test.de"
+}
+
+<> 2026-01-09T222709.201.json
+
+###
+
+POST http://localhost:8080/api/reservations
+Content-Type: application/json
+Content-Length: 110
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "timeSlot": "Montag 08-10 Uhr",
+  "personUuid": 797574875648983065,
+  "facilityUuid": 797565712985211066
+}
+
+<> 2026-01-09T221849.404.json
+
+###
+
+GET http://localhost:8080/api/persons
+Accept: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+
+<> 2026-01-09T221807.200.json
+
+###
+
+GET http://localhost:8080/api/persons
+Accept: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+
+<> 2026-01-09T221720.200.json
+
+###
+
+POST http://localhost:8080/api/reservations
+Content-Type: application/json
+Content-Length: 110
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "timeSlot": "Montag 08-10 Uhr",
+  "personUuid": 797572595219952560,
+  "facilityUuid": 797565712985211066
+}
+
+<> 2026-01-09T220955.404.json
+
+###
+
+POST http://localhost:8080/api/reservations
+Content-Type: application/json
+Content-Length: 110
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "timeSlot": "Montag 08-10 Uhr",
+  "personUuid": 797572595219952560,
+  "facilityUuid": 797565712985211066
+}
+
+<> 2026-01-09T220924.404.json
+
+###
+
+POST http://localhost:8080/api/persons
+Content-Type: application/json
+Content-Length: 78
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "firstName": "Max",
+  "lastName": "Mustermann",
+  "email": "max@test.de"
+}
+
+<> 2026-01-09T220844.201.json
+
+###
+
+POST http://localhost:8080/api/reservations
+Content-Type: application/json
+Content-Length: 93
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "timeSlot": "Montag 08-10 Uhr",
+  "personUuid": 1,
+  "facilityUuid": 797572141916353456
+}
+
+<> 2026-01-09T220719.404.json
+
+###
+
+POST http://localhost:8080/api/reservations
+Content-Type: application/json
+Content-Length: 93
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "timeSlot": "Montag 08-10 Uhr",
+  "personUuid": 1,
+  "facilityUuid": 797572141916353456
+}
+
+<> 2026-01-09T220714.404.json
+
+###
+
+POST http://localhost:8080/api/persons
+Content-Type: application/json
+Content-Length: 78
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "firstName": "Max",
+  "lastName": "Mustermann",
+  "email": "max@test.de"
+}
+
+<> 2026-01-09T220656.201.json
+
+###
+
+POST http://localhost:8080/api/reservations
+Content-Type: application/json
+Content-Length: 110
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "timeSlot": "Montag 08-10 Uhr",
+  "personUuid": 797571365110280338,
+  "facilityUuid": 797571365110280338
+}
+
+<> 2026-01-09T220610.404.json
+
+###
+
+POST http://localhost:8080/api/reservations
+Content-Type: application/json
+Content-Length: 110
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "timeSlot": "Montag 08-10 Uhr",
+  "personUuid": 797571365110280338,
+  "facilityUuid": 797565712985211066
+}
+
+<> 2026-01-09T220602.404.json
+
+###
+
+POST http://localhost:8080/api/reservations
+Content-Type: application/json
+Content-Length: 93
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "timeSlot": "Montag 08-10 Uhr",
+  "personUuid": 1,
+  "facilityUuid": 797571365110280338
+}
+
+<> 2026-01-09T220453.404.json
+
+###
+
+GET http://localhost:8080/api/persons
+Accept: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+
+<> 2026-01-09T220426.200.json
+
+###
+
+POST http://localhost:8080/api/reservations
+Content-Type: application/json
+Content-Length: 93
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "timeSlot": "Montag 08-10 Uhr",
+  "personUuid": 1,
+  "facilityUuid": 797565712985211066
+}
+
+<> 2026-01-09T220339.404.json
+
+###
+
+POST http://localhost:8080/api/reservations
+Content-Type: application/json
+Content-Length: 93
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "timeSlot": "Montag 08-10 Uhr",
+  "personUuid": 1,
+  "facilityUuid": 797565712985211066
+}
+
+<> 2026-01-09T215753.404.json
+
+###
+
+POST http://localhost:8080/api/reservations
+Content-Type: application/json
+Content-Length: 100
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "timeSlot": "Dienstag 10-12 Uhr",
+  "personUuid": 999999,
+  "facilityUuid": 797565712985211066
+}
+
+<> 2026-01-09T215749.404.json
+
+###
+
+POST http://localhost:8080/api/reservations
+Content-Type: application/json
+Content-Length: 93
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "timeSlot": "Montag 08-10 Uhr",
+  "personUuid": 1,
+  "facilityUuid": 797565712985211066
+}
+
+<> 2026-01-09T215724.404.json
+
+###
+
+POST http://localhost:8080/api/reservations
+Content-Type: application/json
+Content-Length: 93
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "timeSlot": "Montag 08-10 Uhr",
+  "personUuid": 1,
+  "facilityUuid": 797565712985211066
+}
+
+<> 2026-01-09T215712.404.json
+
+###
+
+DELETE http://localhost:8080/api/persons/999999
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2026-01-08T225554.404.json
+
+###
+
+DELETE http://localhost:8080/api/persons/797221805287269331
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2026-01-08T225529.404.json
+
+###
+
+DELETE http://localhost:8080/api/persons/797221805287269331
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+###
+
+POST http://localhost:8080/api/persons
+Content-Type: application/json
+Content-Length: 78
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "firstName": "Delete",
+  "lastName": "Test",
+  "email": "delete@test.de"
+}
+
+<> 2026-01-08T225450.201.json
+
+###
+
+DELETE http://localhost:8080/api/persons/797221125709358077
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2026-01-08T225444.404.json
+
+###
+
+DELETE http://localhost:8080/api/persons/797221125709358077
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+###
+
+POST http://localhost:8080/api/persons
+Content-Type: application/json
+Content-Length: 78
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "firstName": "Delete",
+  "lastName": "Test",
+  "email": "delete@test.de"
+}
+
+<> 2026-01-08T225208.201.json
+
+###
+
+DELETE http://localhost:8080/api/persons/797221001067226049
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+###
+
+POST http://localhost:8080/api/persons
+Content-Type: application/json
+Content-Length: 78
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "firstName": "Delete",
+  "lastName": "Test",
+  "email": "delete@test.de"
+}
+
+<> 2026-01-08T225138.201.json
+
+###
+
+DELETE http://localhost:8080/api/persons/797220717624550331
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2026-01-08T225117.404.json
+
+###
+
+DELETE http://localhost:8080/api/persons/797220717624550331
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+###
+
+POST http://localhost:8080/api/persons
+Content-Type: application/json
+Content-Length: 78
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "firstName": "Delete",
+  "lastName": "Test",
+  "email": "delete@test.de"
+}
+
+<> 2026-01-08T225030.201.json
+
+###
+
+DELETE http://localhost:8080/api/persons/999999
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2026-01-08T225014.404.json
+
+###
+
+DELETE http://localhost:8080/api/persons/797219238939452377
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2026-01-08T224549.404.json
+
+###
+
+DELETE http://localhost:8080/api/persons/999999
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2026-01-08T224543.404.json
+
+###
+
+DELETE http://localhost:8080/api/persons/797219238939452377
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+###
+
+POST http://localhost:8080/api/persons
+Content-Type: application/json
+Content-Length: 78
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "firstName": "Delete",
+  "lastName": "Test",
+  "email": "delete@test.de"
+}
+
+<> 2026-01-08T224438.201.json
+
+###
+
+DELETE http://localhost:8080/api/persons/999999
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2026-01-08T224429.404.json
+
+###
+
+PATCH http://localhost:8080/api/persons/999999999
+Content-Type: application/json
+Content-Length: 25
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "firstName": "Test"
+}
+
+<> 2026-01-06T193249.400.json
+
+###
+
+PATCH http://localhost:8080/api/persons/796445656465297567
+Content-Type: application/json
+Content-Length: 39
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "firstName": "",
+  "lastName": ""
+}
+
+<> 2026-01-06T193227.400.json
+
+###
+
+PATCH http://localhost:8080/api/persons/796445656465297567
+Content-Type: application/json
+Content-Length: 59
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "firstName": "Maximilian",
+  "lastName": "Mustermann"
+}
+
+<> 2026-01-06T193204.200.json
+
+###
+
+GET http://localhost:8080/api/persons
+Accept: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+
+<> 2026-01-06T193052.200.json
+
+###
+
+PATCH http://localhost:8080/api/persons/999999999
+Content-Type: application/json
+Content-Length: 25
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "firstName": "Test"
+}
+
+<> 2026-01-06T192350-2.400.json
+
+###
+
+PATCH http://localhost:8080/api/persons/796153165872563187
+Content-Type: application/json
+Content-Length: 39
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "firstName": "",
+  "lastName": ""
+}
+
+<> 2026-01-06T192350-1.400.json
+
+###
+
+PATCH http://localhost:8080/api/persons/796153165872563187
+Content-Type: application/json
+Content-Length: 59
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "firstName": "Maximilian",
+  "lastName": "Mustermann"
+}
+
+<> 2026-01-06T192350.500.json
+
+###
+
 POST http://localhost:8080/api/persons
 Content-Type: application/json
 Content-Length: 57
@@ -11,7 +652,7 @@ Accept: */*
   "email": "abc"
 }
 
-<> 2026-01-05T205709.400.json
+<> 2026-01-06T192350.400.json
 
 ###
 
@@ -28,7 +669,7 @@ Accept: */*
   "email": "max@test.de"
 }
 
-<> 2026-01-05T205709.201.json
+<> 2026-01-06T192350.201.json
 
 ###
 
@@ -37,33 +678,23 @@ Accept: application/json
 User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.1
 Accept-Encoding: br, deflate, gzip, x-gzip
 
-<> 2026-01-05T205708.200.json
+<> 2026-01-06T192350.200.json
 
 ###
 
-POST http://localhost:8080/api/persons
+PATCH http://localhost:8080/api/persons/796153165872563187
 Content-Type: application/json
-Content-Length: 78
+Content-Length: 59
 User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.1
 Accept-Encoding: br, deflate, gzip, x-gzip
 Accept: */*
 
 {
-  "firstName": "Max",
-  "lastName": "Mustermann",
-  "email": "max@test.de"
+  "firstName": "Maximilian",
+  "lastName": "Mustermann"
 }
 
-<> 2026-01-05T205551.201.json
-
-###
-
-GET http://localhost:8080/api/persons
-Accept: application/json
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-
-<> 2026-01-05T205550.200.json
+<> 2026-01-06T192336.500.json
 
 ###
 

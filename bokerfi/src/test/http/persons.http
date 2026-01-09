@@ -22,3 +22,79 @@ Content-Type: application/json
   "lastName": "",
   "email": "abc"
 }
+
+### PATCH gültige Person
+PATCH http://localhost:8080/api/persons/796445656465297567
+Content-Type: application/json
+
+{
+  "firstName": "Maximilian",
+  "lastName": "Mustermann"
+}
+
+### PATCH ungültige Person (Validation)
+PATCH http://localhost:8080/api/persons/796445656465297567
+Content-Type: application/json
+
+{
+  "firstName": "",
+  "lastName": ""
+}
+
+### PATCH unbekannte UUID
+PATCH http://localhost:8080/api/persons/999999999
+Content-Type: application/json
+
+{
+  "firstName": "Test"
+}
+
+### DELETE - Person existiert nicht
+DELETE http://localhost:8080/api/persons/999999
+
+###
+
+### POST Person für DELETE-Test anlegen
+POST http://localhost:8080/api/persons
+Content-Type: application/json
+
+{
+  "firstName": "Delete",
+  "lastName": "Test",
+  "email": "delete@test.de"
+}
+
+###
+### DELETE existierende Person
+DELETE http://localhost:8080/api/persons/797221805287269331
+
+###
+
+### DELETE dieselbe Person erneut
+DELETE http://localhost:8080/api/persons/797221805287269331
+
+###
+
+### POST Reservierung anlegen
+POST http://localhost:8080/api/reservations
+Content-Type: application/json
+
+{
+  "timeSlot": "Montag 08-10 Uhr",
+  "personUuid": 797577230142833606,
+  "facilityUuid": 797577087159009401
+}
+
+###
+
+### POST Reservierung – unbekannte Person
+POST http://localhost:8080/api/reservations
+Content-Type: application/json
+
+{
+  "timeSlot": "Dienstag 10-12 Uhr",
+  "personUuid": 797572595219952560,
+  "facilityUuid": 797565712985211066
+}
+
+###

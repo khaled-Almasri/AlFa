@@ -1,0 +1,14 @@
+[
+  {
+    "uuid": 797574875648983065,
+    "firstName": "Max",
+    "lastName": "Mustermann",
+    "email": "max@test.de"
+  },
+  {
+    "uuid": 797574876072607986,
+    "firstName": "Erika",
+    "lastName": "Musterfrau",
+    "email": "erika@test.de"
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "uuid": 797571365110280338,
+    "firstName": "Max",
+    "lastName": "Mustermann",
+    "email": "max@test.de"
+  },
+  {
+    "uuid": 797571365382909968,
+    "firstName": "Erika",
+    "lastName": "Musterfrau",
+    "email": "erika@test.de"
+  },
+  {
+    "uuid": 797572141916353456,
+    "firstName": "Max",
+    "lastName": "Mustermann",
+    "email": "max@test.de"
+  },
+  {
+    "uuid": 797572595219952560,
+    "firstName": "Max",
+    "lastName": "Mustermann",
+    "email": "max@test.de"
+  }
+]

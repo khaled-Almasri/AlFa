@@ -4,6 +4,8 @@ import de.unibremen.cs.swp.bokerfi.dto.PersonCreateDTO;
 import de.unibremen.cs.swp.bokerfi.service.PersonCreateService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
+import de.unibremen.cs.swp.bokerfi.service.FacilityCreateService;
+import de.unibremen.cs.swp.bokerfi.dto.FacilityCreateDTO;
 
 /**
  * Initialisiert Beispieldaten beim Start der Anwendung.
@@ -12,11 +14,28 @@ import org.springframework.stereotype.Component;
 public class DataInitializer implements CommandLineRunner {
 
     private final PersonCreateService personCreateService;
+    private final FacilityCreateService facilityCreateService;
 
-    public DataInitializer(PersonCreateService personCreateService) {
+    /**
+     * Konstruktor für die Initialisierung der benötigten Services.
+     * Die Services werden von Spring automatisch injiziert
+     * (Constructor Injection).
+     *
+     * @param personCreateService   Service zum Erstellen von Personen
+     * @param facilityCreateService Service zum Erstellen von Räumen
+     */
+    public DataInitializer(PersonCreateService personCreateService, FacilityCreateService facilityCreateService) {
         this.personCreateService = personCreateService;
+        this.facilityCreateService = facilityCreateService;
     }
 
+    /**
+     * Wird automatisch beim Start der Anwendung ausgeführt.
+     * Hier werden Beispielpersonen und ein Beispielraum
+     * im Datenbestand angelegt.
+     *
+     * @param args Startparameter der Anwendung (werden hier nicht verwendet)
+     */
     @Override
     public void run(String... args) {
 
@@ -28,6 +47,7 @@ public class DataInitializer implements CommandLineRunner {
                 )
         );
 
+
         personCreateService.createPerson(
                 new PersonCreateDTO(
                         "Erika",
@@ -35,5 +55,11 @@ public class DataInitializer implements CommandLineRunner {
                         "erika@test.de"
                 )
         );
+
+        FacilityCreateDTO senatssaal =
+                new FacilityCreateDTO("MZH 1380/1400");
+
+        facilityCreateService.createFacility(senatssaal);
+
     }
 }

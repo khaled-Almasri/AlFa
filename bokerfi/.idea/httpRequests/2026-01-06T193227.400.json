@@ -1,0 +1,6 @@
+{
+  "timestamp": "2026-01-06T18:32:27.190+00:00",
+  "status": 400,
+  "error": "Bad Request",
+  "path": "/api/persons/796445656465297567"
+}
