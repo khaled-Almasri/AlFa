@@ -34,7 +34,7 @@
         }
 
         .screenshot {
-            color: #666;
+            color: #ccc;
             font-style: italic;
             size: 1;
         }
@@ -74,8 +74,14 @@
 
     <div class="box">
         <p class="screenshot">Screenshot: Spring Boot Start (Konsole) </p>
-        <img src="Screenshot/Bokerfistarts.png" alt="" class="screenshot">
-        <img src="Screenshot/Helloswp.png" alt="" class="screenshot">
+        <figure>
+            <img src="Screenshot/Bokerfistarts.png" alt="" style="max-width:100%; border:1px solid #ccc;">
+            <img src="Screenshot/Helloswp.png" alt="" style="max-width:100%; border:1px solid #ccc;">
+
+        </figure>
+
+        class="screenshot">
+        class="screenshot">
     </div>
 
     <hr>
@@ -106,7 +112,10 @@ public class HelloController {
 
     <div class="box">
         <p class="screenshot">Screenshot: Konsole (HelloController Log)</p>
-        <img src="Screenshot/HelloControllerCalled.png" alt="" class="screenshot-img">
+        <figure>
+            <img src="Screenshot/HelloControllerCalled.png" alt="" style="max-width:100%; border:1px solid #ccc;">
+        </figure>
+
     </div>
 
     <hr>
@@ -133,7 +142,9 @@ public class HelloController {
 
     <div class="box">
         <p class="screenshot">Screenshot: docker compose up -d</p>
-        <img src="Screenshot/Docker.png" alt="" class="screenshot-img">
+        <figure>
+            <img src="Screenshot/Docker.png" alt="" style="max-width:100%; border:1px solid #ccc;">
+        </figure>
     </div>
 
     <hr>
@@ -206,7 +217,9 @@ public class DataInitializer implements CommandLineRunner {
 
     <div class="box">
         <p class="screenshot">Screenshot: Hibernate INSERT Logs</p>
-        <img src="Screenshot/Konsole_ueb6.png" alt="" class="screenshot">
+        <figure>
+            <img src="Screenshot/Konsole_ueb6.png" alt="" style="max-width:90%; border:1px solid #ccc;">
+        </figure>
     </div>
 
     <hr>
@@ -225,7 +238,9 @@ public class DataInitializer implements CommandLineRunner {
 
     <div class="box">
         <p class="screenshot">Screenshot: Browser JSON-Ausgabe Personen</p>
-        <img src="Screenshot/Konsole_ueb07.png" alt="" class="screenshot">
+        <figure>
+            <img src="Screenshot/Konsole_ueb07.png" alt="Konsole_ueb07" style="max-width:90%; border:1px solid #ccc;">
+        </figure>
     </div>
 
     <hr>
@@ -285,10 +300,12 @@ public interface PersonMapper {
         <li>Automatische und typsichere Mapping-Logik durch MapStruct</li>
     </ul>
     <div class="box">
-        <p class="screenshot"> Screenshot: target/generated-sources</p>
-        <img src="Screenshot/Konsole_ueb08.png" alt="" class="screenshot">
-        <p class="screenshot"> Screenshot: Browser_ueb08</p>
-        <img src="Screenshot/Browser_ueb08.png" alt="" class="screenshot">
+        <figure>
+            <p class="screenshot"> Screenshot: target/generated-sources</p>
+            <img src="Screenshot/Konsole_ueb08.png" alt="Konsole_ueb07" style="max-width:90%; border:1px solid #ccc;">
+            <p class="screenshot"> Screenshot: Browser_ueb08</p>
+            <img src="Screenshot/Browser_ueb08.png" alt="Browser_ueb08" style="max-width:90%; border:1px solid #ccc;">
+        </figure>
     </div>
 
     <hr>
@@ -387,6 +404,171 @@ public record PersonCreateDTO(
         umgesetzt.
     </p>
 
+    <p>
+        Ziel dieses Übungsblatts war die Implementierung eines REST-Endpunkts zum
+        <strong>teilweisen Aktualisieren</strong> von Personen mittels der
+        HTTP-Methode <code>PATCH</code>.
+        Dabei dürfen ausschließlich Vor- und Nachname geändert werden.
+    </p>
+
+    <h3>Umsetzung</h3>
+    <ul>
+        <li>Einführung eines eigenen <code>PersonUpdateDTO</code> für Update-Requests</li>
+        <li>Validierung der Eingaben mit <code>@Valid</code> und Bean Validation</li>
+        <li>Umsetzung der Update-Logik in einem separaten <code>PersonUpdateService</code></li>
+        <li>Verwendung von MapStruct mit <code>@MappingTarget</code> für partielle Updates</li>
+        <li>Schutz unveränderlicher Felder (<code>id</code>, <code>uuid</code>, <code>email</code>)</li>
+    </ul>
+
+    <h3>REST-Endpunkt</h3>
+    <pre><code>
+PATCH /api/persons/{uuid}
+  </code></pre>
+
+    <p>
+        Die UUID der zu ändernden Person wird über die URL übergeben,
+        die neuen Werte über den Request-Body.
+    </p>
+
+    <h3>Fehlerbehandlung</h3>
+    <p>
+        Zur sauberen Behandlung von Fehlerfällen wurde ein globaler
+        Exception-Handler (<code>@RestControllerAdvice</code>) implementiert.
+        Dadurch werden interne Fehler vermieden und konsistente HTTP-Statuscodes
+        zurückgegeben.
+    </p>
+
+    <ul>
+        <li>Ungültige Eingaben → <strong>HTTP 400 Bad Request</strong></li>
+        <li>Nicht existierende UUID → <strong>HTTP 400 Bad Request</strong></li>
+        <li>Erfolgreiches Update → <strong>HTTP 200 OK</strong></li>
+    </ul>
+
+    <h3>Tests</h3>
+    <p>
+        Die Funktionalität wurde über eine <code>.http</code>-Datei mit dem
+        IntelliJ HTTP Client getestet. Dabei wurden sowohl erfolgreiche
+        als auch fehlerhafte PATCH-Anfragen überprüft.
+    </p>
+    <br>
+
+    <h2>Übungsblatt 11</h2>
+
+    <h3>Ziel</h3>
+    <p>
+        In Übungsblatt 11 wurde das Löschen von Personen über eine REST-API
+        mittels der HTTP-Methode <strong>DELETE</strong> umgesetzt.
+    </p>
+
+    <h3>Umsetzung</h3>
+    <p>
+        In der Repository-Schicht wurden Methoden zum Finden und Löschen von Personen
+        anhand ihrer UUID definiert.
+        Das Löschen erfolgt über einen eigenen Service, der mit
+        <code>@Transactional</code> annotiert ist und vorab prüft,
+        ob die Person existiert.
+    </p>
+    <p>
+        Der DELETE-Endpunkt <code>/api/persons/{uuid}</code> liefert bei erfolgreichem
+        Löschen den Status <strong>204 (NO CONTENT)</strong>.
+        Existiert die Person nicht, wird über den globalen Exception-Handler
+        der Status <strong>404 (NOT FOUND)</strong> zurückgegeben.
+    </p>
+
+    <h3>Tests</h3>
+    <p>
+        Die Funktionalität wurde mit HTTP-Tests überprüft:
+        nicht existierende Person (404), erfolgreiches Löschen (204)
+        sowie erneutes Löschen derselben Person (404).
+    </p>
+    <hr>
+    <h2>Dokumentation – Übungsblatt 12</h2>
+
+    <h3>Ziel</h3>
+    <p>
+        Ziel von Übungsblatt 12 ist die Erweiterung des Datenmodells um
+        <strong>Räume (Facility)</strong> und <strong>Reservierungen (Reservation)</strong>,
+        um die Grundlage für eine spätere Raumreservierung zu schaffen.
+    </p>
+
+    <h3>Umsetzung</h3>
+    <p>
+        Für Räume wurde die JPA-Entität <code>Facility</code> mit einer Bezeichnung
+        implementiert. Zusätzlich wurden passende DTOs, Mapper, ein Repository
+        sowie ein Create-Service erstellt.
+    </p>
+    <p>
+        Die Erzeugung von Räumen erfolgt nicht über die REST-API, sondern beim
+        Start der Anwendung über den <code>DataInitializer</code>.
+    </p>
+    <p>
+        Reservierungen wurden als eigene Entität modelliert, die jeweils genau
+        eine Person und einen Raum referenziert. Die Beziehungen wurden über
+        <code>@ManyToOne</code> umgesetzt.
+    </p>
+
+    <h2>Ergebnis</h2>
+    <p>
+        Beim Start der Anwendung werden Beispielpersonen und ein Raum
+        automatisch angelegt. Die Datenbankstruktur bildet Personen,
+        Räume und Reservierungen korrekt ab.
+    </p>
+    <figure>
+        <img src="Screenshot/Facility.png" alt="" style="max-width:100%; border:1px solid #ccc;">
+    </figure>
+
+    <hr>
+
+    <h2>Dokumentation – Übungsblatt 13</h2>
+
+    <h3>Ziel</h3>
+    <p>
+        Ziel von Übungsblatt 13 ist die Implementierung einer REST-Funktionalität
+        zur <strong>konkreten Reservierung von Räumen</strong>.
+    </p>
+
+    <h3>Umsetzung</h3>
+    <p>
+        Für Reservierungen wurden eigene DTOs erstellt, die ausschließlich die
+        UUIDs der referenzierten Person und des Raumes enthalten.
+        Dadurch bleiben die DTOs lose gekoppelt und übersichtlich.
+    </p>
+    <p>
+        Die Umwandlung zwischen Entitäten und DTOs erfolgt über MapStruct-Mapper.
+        Die Zuordnung der referenzierten UUIDs wird explizit konfiguriert.
+    </p>
+    <p>
+        In der Service-Schicht wird vor dem Speichern einer Reservierung geprüft,
+        ob die angegebene Person und der Raum existieren. Ist dies nicht der Fall,
+        wird eine entsprechende Exception ausgelöst.
+    </p>
+    <p>
+        Über einen REST-Controller können Reservierungen per
+        <code>POST /api/reservations</code> angelegt werden.
+        Bei erfolgreicher Erstellung wird der HTTP-Status
+        <strong>201 (Created)</strong> zurückgegeben.
+    </p>
+
+    <h3>Tests</h3>
+    <p>
+        Die Funktionalität wurde mit HTTP-Tests überprüft:
+    </p>
+    <ul>
+        <li>Erfolgreiche Reservierung mit existierender Person und Raum → 201</li>
+        <li>Reservierung mit unbekannter Person oder unbekanntem Raum → 404</li>
+    </ul>
+
+    <h3>Ergebnis</h3>
+    <p>
+        Die Reservierungsfunktion arbeitet korrekt, prüft die Existenz der
+        referenzierten Entitäten und liefert passende HTTP-Statuscodes.
+    </p>
+    <figure>
+        <img src="Screenshot/Facility_uuid_ersetzen.png" alt="uuid_ersetzen"
+            style="max-width:100%; border:1px solid #ccc;">
+        <img src="Screenshot/Ergebnisse_Reserv_anlegen.png" alt="Ergebnisse_Reserv_anlegen"
+            style="max-width:100%; border:1px solid #ccc;">
+    </figure>
 </body>
 
 </html>
