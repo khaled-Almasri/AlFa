@@ -1,0 +1,39 @@
+### =========================
+### 1️⃣ Alle Assets anzeigen
+### =========================
+GET http://localhost:8080/api/assets
+Authorization: Basic admin@test.de password
+Accept: application/json
+
+### =========================
+### 2️⃣ Asset zuweisen (ASSIGN)
+### Rolle: ASSET_MANAGER
+### =========================
+PATCH http://localhost:8080/api/assets/802154207636508724/assign
+Authorization: Basic manager@test.de password
+Content-Type: application/json
+
+{
+  "personUuid": 802154207481319642
+}
+
+### =========================
+### 3️⃣ Asset zurückgeben (RETURN)
+### Rolle: ASSET_MANAGER
+### =========================
+PATCH http://localhost:8080/api/assets/802154207636508724/return
+Authorization: Basic manager@test.de password
+
+### =========================
+### 4️⃣ Asset blockieren (BLOCK)
+### Rolle: ADMIN
+### =========================
+PATCH http://localhost:8080/api/assets/802154207636508724/block
+Authorization: Basic admin@test.de password
+
+### =========================
+### 5️⃣ Asset entblockieren (UNBLOCK)
+### Rolle: ADMIN
+### =========================
+PATCH http://localhost:8080/api/assets/802154207636508724/unblock
+Authorization: Basic admin@test.de password

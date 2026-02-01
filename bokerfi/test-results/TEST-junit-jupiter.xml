@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="JUnit Jupiter" tests="63" skipped="5" failures="0" errors="0" time="10.984" hostname="Amjad" timestamp="2026-02-01T19:17:40">
+<properties>
+<property name="api.url" value="http://localhost:8080"/>
+<property name="file.encoding" value="UTF-8"/>
+<property name="file.separator" value="\"/>
+<property name="java.class.path" value="vswp-test-suite.jar"/>
+<property name="java.class.version" value="67.0"/>
+<property name="java.home" value="C:\Program Files\Java\jdk-23"/>
+<property name="java.io.tmpdir" value="C:\Users\faham\AppData\Local\Temp\"/>
+<property name="java.library.path" value="C:\Program Files\Java\jdk-23\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\sqlite3;C:\Program Files\Java\jdk-23\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\mingw32\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Users\faham\Downloads\apache-maven-3.9.12-bin\apache-maven-3.9.12\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\faham\AppData\Local\Microsoft\WindowsApps;C:\Users\faham\AppData\Local\Microsoft\WinGet\Packages\SQLite.SQLite_Microsoft.Winget.Source_8wekyb3d8bbwe;C:\Users\faham\AppData\Local\Programs\Microsoft VS Code\bin;C:\ghcup\bin;C:\Users\faham\AppData\Local\Programs\Antigravity\bin;c:\Users\faham\.antigravity\extensions\vscjava.vscode-java-debug-0.58.5-universal\bundled\scripts\noConfigScripts;c:\Users\faham\.antigravity\extensions\ms-python.debugpy-2025.18.0-win32-x64\bundled\scripts\noConfigScripts;."/>
+<property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+<property name="java.runtime.version" value="23+37-2369"/>
+<property name="java.specification.name" value="Java Platform API Specification"/>
+<property name="java.specification.vendor" value="Oracle Corporation"/>
+<property name="java.specification.version" value="23"/>
+<property name="java.vendor" value="Oracle Corporation"/>
+<property name="java.vendor.url" value="https://java.oracle.com/"/>
+<property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+<property name="java.version" value="23"/>
+<property name="java.version.date" value="2024-09-17"/>
+<property name="java.vm.compressedOopsMode" value="Zero based"/>
+<property name="java.vm.info" value="mixed mode, sharing"/>
+<property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+<property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+<property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+<property name="java.vm.specification.version" value="23"/>
+<property name="java.vm.vendor" value="Oracle Corporation"/>
+<property name="java.vm.version" value="23+37-2369"/>
+<property name="jdk.debug" value="release"/>
+<property name="line.separator" value="
+"/>
+<property name="native.encoding" value="Cp1252"/>
+<property name="os.arch" value="amd64"/>
+<property name="os.name" value="Windows 11"/>
+<property name="os.version" value="10.0"/>
+<property name="path.separator" value=";"/>
+<property name="stderr.encoding" value="cp850"/>
+<property name="stdout.encoding" value="cp850"/>
+<property name="sun.arch.data.model" value="64"/>
+<property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-23\bin"/>
+<property name="sun.cpu.endian" value="little"/>
+<property name="sun.cpu.isalist" value="amd64"/>
+<property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+<property name="sun.java.command" value="vswp-test-suite.jar --url http://localhost:8080"/>
+<property name="sun.java.launcher" value="SUN_STANDARD"/>
+<property name="sun.jnu.encoding" value="Cp1252"/>
+<property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+<property name="sun.os.patch.level" value=""/>
+<property name="user.country" value="DE"/>
+<property name="user.dir" value="C:\Users\faham\OneDrive\Desktop\vSWP-2526\AlFa\Projekt\bokerfi"/>
+<property name="user.home" value="C:\Users\faham"/>
+<property name="user.language" value="de"/>
+<property name="user.name" value="faham"/>
+<property name="user.script" value=""/>
+<property name="user.timezone" value="Europe/Berlin"/>
+<property name="user.variant" value=""/>
+</properties>
+<testcase name="shouldSee200AfterListAssetsByStatus()" classname="de.unibremen.informatik.swp.tests.AssetsListTest" time="0">
+<skipped><![CDATA[Not implemented yet]]></skipped>
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.AssetsListTest]/[method:shouldSee200AfterListAssetsByStatus()]
+display-name: shouldSee200AfterListAssetsByStatus()
+]]></system-out>
+</testcase>
+<testcase name="shouldSee204AfterDeleteLocation()" classname="de.unibremen.informatik.swp.tests.LocationsApiTest" time="0.378">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.LocationsApiTest]/[method:shouldSee204AfterDeleteLocation()]
+display-name: shouldSee204AfterDeleteLocation()
+]]></system-out>
+</testcase>
+<testcase name="shouldSee200AfterUpdateAsset()" classname="de.unibremen.informatik.swp.tests.AssetsApiTest" time="0.304">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.AssetsApiTest]/[method:shouldSee200AfterUpdateAsset()]
+display-name: shouldSee200AfterUpdateAsset()
+]]></system-out>
+</testcase>
+<testcase name="shouldSee409AfterCreateAsset()" classname="de.unibremen.informatik.swp.tests.AssetsApiTest" time="0.279">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.AssetsApiTest]/[method:shouldSee409AfterCreateAsset()]
+display-name: shouldSee409AfterCreateAsset()
+]]></system-out>
+</testcase>
+<testcase name="shouldSee200AfterListAssetsByPurchaseDate()" classname="de.unibremen.informatik.swp.tests.AssetsListTest" time="2.003">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.AssetsListTest]/[method:shouldSee200AfterListAssetsByPurchaseDate()]
+display-name: shouldSee200AfterListAssetsByPurchaseDate()
+]]></system-out>
+</testcase>
+<testcase name="shouldSee200AfterListLocations()" classname="de.unibremen.informatik.swp.tests.LocationsApiTest" time="0.102">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.LocationsApiTest]/[method:shouldSee200AfterListLocations()]
+display-name: shouldSee200AfterListLocations()
+]]></system-out>
+</testcase>
+<testcase name="shouldSee404AfterGetAssetById()" classname="de.unibremen.informatik.swp.tests.AssetsApiTest" time="0.039">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.AssetsApiTest]/[method:shouldSee404AfterGetAssetById()]
+display-name: shouldSee404AfterGetAssetById()
+]]></system-out>
+</testcase>
+<testcase name="shouldSee409AfterUpdateAssetType()" classname="de.unibremen.informatik.swp.tests.AssetTypesApiTest" time="0.086">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.AssetTypesApiTest]/[method:shouldSee409AfterUpdateAssetType()]
+display-name: shouldSee409AfterUpdateAssetType()
+]]></system-out>
+</testcase>
+<testcase name="shouldSee204AfterDeactivateUser()" classname="de.unibremen.informatik.swp.tests.UsersApiTest" time="0.099">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.UsersApiTest]/[method:shouldSee204AfterDeactivateUser()]
+display-name: shouldSee204AfterDeactivateUser()
+]]></system-out>
+</testcase>
+<testcase name="shouldSee404AfterActivateUser()" classname="de.unibremen.informatik.swp.tests.UsersApiTest" time="0.038">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.UsersApiTest]/[method:shouldSee404AfterActivateUser()]
+display-name: shouldSee404AfterActivateUser()
+]]></system-out>
+</testcase>
+<testcase name="shouldSee200AfterListAssetsByPagination()" classname="de.unibremen.informatik.swp.tests.AssetsListTest" time="0">
+<skipped><![CDATA[Not implemented yet]]></skipped>
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.AssetsListTest]/[method:shouldSee200AfterListAssetsByPagination()]
+display-name: shouldSee200AfterListAssetsByPagination()
+]]></system-out>
+</testcase>
+<testcase name="shouldSee204AfterDeleteAssetType()" classname="de.unibremen.informatik.swp.tests.AssetTypesApiTest" time="0.092">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.AssetTypesApiTest]/[method:shouldSee204AfterDeleteAssetType()]
+display-name: shouldSee204AfterDeleteAssetType()
+]]></system-out>
+</testcase>
+<testcase name="shouldSee200AfterListAssetsByWarrantyExpiringBefore()" classname="de.unibremen.informatik.swp.tests.AssetsListTest" time="0.28">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.AssetsListTest]/[method:shouldSee200AfterListAssetsByWarrantyExpiringBefore()]
+display-name: shouldSee200AfterListAssetsByWarrantyExpiringBefore()
+]]></system-out>
+</testcase>
+<testcase name="shouldSee201AfterCreateAsset()" classname="de.unibremen.informatik.swp.tests.AssetsApiTest" time="0.18">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.AssetsApiTest]/[method:shouldSee201AfterCreateAsset()]
+display-name: shouldSee201AfterCreateAsset()
+]]></system-out>
+</testcase>
+<testcase name="shouldSee401AfterLogin()" classname="de.unibremen.informatik.swp.tests.AuthApiTest" time="0.028">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.AuthApiTest]/[method:shouldSee401AfterLogin()]
+display-name: shouldSee401AfterLogin()
+]]></system-out>
+</testcase>
+<testcase name="shouldSee200AfterGetUserById()" classname="de.unibremen.informatik.swp.tests.UsersApiTest" time="0.074">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.UsersApiTest]/[method:shouldSee200AfterGetUserById()]
+display-name: shouldSee200AfterGetUserById()
+]]></system-out>
+</testcase>
+<testcase name="shouldSee200AfterListAssetsByIsActive()" classname="de.unibremen.informatik.swp.tests.AssetsListTest" time="0">
+<skipped><![CDATA[Not implemented yet]]></skipped>
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.AssetsListTest]/[method:shouldSee200AfterListAssetsByIsActive()]
+display-name: shouldSee200AfterListAssetsByIsActive()
+]]></system-out>
+</testcase>
+<testcase name="shouldSee200AfterGetAssetTypeById()" classname="de.unibremen.informatik.swp.tests.AssetTypesApiTest" time="0.1">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.AssetTypesApiTest]/[method:shouldSee200AfterGetAssetTypeById()]
+display-name: shouldSee200AfterGetAssetTypeById()
+]]></system-out>
+</testcase>
+<testcase name="shouldSee200AfterUpdateUser()" classname="de.unibremen.informatik.swp.tests.UsersApiTest" time="0.094">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.UsersApiTest]/[method:shouldSee200AfterUpdateUser()]
+display-name: shouldSee200AfterUpdateUser()
+]]></system-out>
+</testcase>
+<testcase name="shouldSee200AfterLogin()" classname="de.unibremen.informatik.swp.tests.AuthApiTest" time="0.03">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.AuthApiTest]/[method:shouldSee200AfterLogin()]
+display-name: shouldSee200AfterLogin()
+]]></system-out>
+</testcase>
+<testcase name="statefulTestAdminPathA()" classname="de.unibremen.informatik.swp.tests.AssetManagementApiTest" time="0.881">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.AssetManagementApiTest]/[method:statefulTestAdminPathA()]
+display-name: statefulTestAdminPathA()
+]]></system-out>
+</testcase>
+<testcase name="shouldSee404AfterDeactivateUser()" classname="de.unibremen.informatik.swp.tests.UsersApiTest" time="0.042">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.UsersApiTest]/[method:shouldSee404AfterDeactivateUser()]
+display-name: shouldSee404AfterDeactivateUser()
+]]></system-out>
+</testcase>
+<testcase name="shouldSee200AfterListAssetsByAssigneeId()" classname="de.unibremen.informatik.swp.tests.AssetsListTest" time="0.61">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.AssetsListTest]/[method:shouldSee200AfterListAssetsByAssigneeId()]
+display-name: shouldSee200AfterListAssetsByAssigneeId()
+]]></system-out>
+</testcase>
+<testcase name="shouldSee404AfterDeleteAsset()" classname="de.unibremen.informatik.swp.tests.AssetsApiTest" time="0.038">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.AssetsApiTest]/[method:shouldSee404AfterDeleteAsset()]
+display-name: shouldSee404AfterDeleteAsset()
+]]></system-out>
+</testcase>
+<testcase name="shouldSee200AfterHealthCheck()" classname="de.unibremen.informatik.swp.tests.HealthApiTest" time="0.008">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.HealthApiTest]/[method:shouldSee200AfterHealthCheck()]
+display-name: shouldSee200AfterHealthCheck()
+]]></system-out>
+</testcase>
+<testcase name="shouldSee400AfterChangePassword()" classname="de.unibremen.informatik.swp.tests.AuthApiTest" time="0.104">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.AuthApiTest]/[method:shouldSee400AfterChangePassword()]
+display-name: shouldSee400AfterChangePassword()
+]]></system-out>
+</testcase>
+<testcase name="shouldSee200AfterListAssetsByName()" classname="de.unibremen.informatik.swp.tests.AssetsListTest" time="0.268">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.AssetsListTest]/[method:shouldSee200AfterListAssetsByName()]
+display-name: shouldSee200AfterListAssetsByName()
+]]></system-out>
+</testcase>
+<testcase name="shouldSee404AfterGetAssetTypeById()" classname="de.unibremen.informatik.swp.tests.AssetTypesApiTest" time="0.037">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.AssetTypesApiTest]/[method:shouldSee404AfterGetAssetTypeById()]
+display-name: shouldSee404AfterGetAssetTypeById()
+]]></system-out>
+</testcase>
+<testcase name="shouldSee404AfterDeleteLocation()" classname="de.unibremen.informatik.swp.tests.LocationsApiTest" time="0.048">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.LocationsApiTest]/[method:shouldSee404AfterDeleteLocation()]
+display-name: shouldSee404AfterDeleteLocation()
+]]></system-out>
+</testcase>
+<testcase name="shouldSee200AfterListAssetsByInventoryNumber()" classname="de.unibremen.informatik.swp.tests.AssetsListTest" time="0.276">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.AssetsListTest]/[method:shouldSee200AfterListAssetsByInventoryNumber()]
+display-name: shouldSee200AfterListAssetsByInventoryNumber()
+]]></system-out>
+</testcase>
+<testcase name="shouldSee200AfterGetLocationById()" classname="de.unibremen.informatik.swp.tests.LocationsApiTest" time="0.067">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.LocationsApiTest]/[method:shouldSee200AfterGetLocationById()]
+display-name: shouldSee200AfterGetLocationById()
+]]></system-out>
+</testcase>
+<testcase name="shouldSee401AfterChangePassword()" classname="de.unibremen.informatik.swp.tests.AuthApiTest" time="0.06">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.AuthApiTest]/[method:shouldSee401AfterChangePassword()]
+display-name: shouldSee401AfterChangePassword()
+]]></system-out>
+</testcase>
+<testcase name="shouldSee204AfterDeleteAsset()" classname="de.unibremen.informatik.swp.tests.AssetsApiTest" time="0.257">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.AssetsApiTest]/[method:shouldSee204AfterDeleteAsset()]
+display-name: shouldSee204AfterDeleteAsset()
+]]></system-out>
+</testcase>
+<testcase name="shouldSee200AfterUpdateAssetType()" classname="de.unibremen.informatik.swp.tests.AssetTypesApiTest" time="0.053">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.AssetTypesApiTest]/[method:shouldSee200AfterUpdateAssetType()]
+display-name: shouldSee200AfterUpdateAssetType()
+]]></system-out>
+</testcase>
+<testcase name="shouldSee404AfterDeleteAssetType()" classname="de.unibremen.informatik.swp.tests.AssetTypesApiTest" time="0.057">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.AssetTypesApiTest]/[method:shouldSee404AfterDeleteAssetType()]
+display-name: shouldSee404AfterDeleteAssetType()
+]]></system-out>
+</testcase>
+<testcase name="shouldSee401AfterGetCurrentUser()" classname="de.unibremen.informatik.swp.tests.AuthApiTest" time="0.017">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.AuthApiTest]/[method:shouldSee401AfterGetCurrentUser()]
+display-name: shouldSee401AfterGetCurrentUser()
+]]></system-out>
+</testcase>
+<testcase name="shouldSee404AfterUpdateLocation()" classname="de.unibremen.informatik.swp.tests.LocationsApiTest" time="0.054">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.LocationsApiTest]/[method:shouldSee404AfterUpdateLocation()]
+display-name: shouldSee404AfterUpdateLocation()
+]]></system-out>
+</testcase>
+<testcase name="shouldSee200AfterListAssetsByFullTextSearch()" classname="de.unibremen.informatik.swp.tests.AssetsListTest" time="0">
+<skipped><![CDATA[Not implemented yet]]></skipped>
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.AssetsListTest]/[method:shouldSee200AfterListAssetsByFullTextSearch()]
+display-name: shouldSee200AfterListAssetsByFullTextSearch()
+]]></system-out>
+</testcase>
+<testcase name="shouldSee409AfterUpdateUser()" classname="de.unibremen.informatik.swp.tests.UsersApiTest" time="0.121">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.UsersApiTest]/[method:shouldSee409AfterUpdateUser()]
+display-name: shouldSee409AfterUpdateUser()
+]]></system-out>
+</testcase>
+<testcase name="shouldSee201AfterCreateUser()" classname="de.unibremen.informatik.swp.tests.UsersApiTest" time="0.051">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.UsersApiTest]/[method:shouldSee201AfterCreateUser()]
+display-name: shouldSee201AfterCreateUser()
+]]></system-out>
+</testcase>
+<testcase name="shouldSee201AfterCreateAssetType()" classname="de.unibremen.informatik.swp.tests.AssetTypesApiTest" time="0.055">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.AssetTypesApiTest]/[method:shouldSee201AfterCreateAssetType()]
+display-name: shouldSee201AfterCreateAssetType()
+]]></system-out>
+</testcase>
+<testcase name="shouldSee409AfterCreateAssetType()" classname="de.unibremen.informatik.swp.tests.AssetTypesApiTest" time="0.082">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.AssetTypesApiTest]/[method:shouldSee409AfterCreateAssetType()]
+display-name: shouldSee409AfterCreateAssetType()
+]]></system-out>
+</testcase>
+<testcase name="shouldSee204AfterChangePassword()" classname="de.unibremen.informatik.swp.tests.AuthApiTest" time="0.078">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.AuthApiTest]/[method:shouldSee204AfterChangePassword()]
+display-name: shouldSee204AfterChangePassword()
+]]></system-out>
+</testcase>
+<testcase name="shouldSee404AfterUpdateAsset()" classname="de.unibremen.informatik.swp.tests.AssetsApiTest" time="0.047">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.AssetsApiTest]/[method:shouldSee404AfterUpdateAsset()]
+display-name: shouldSee404AfterUpdateAsset()
+]]></system-out>
+</testcase>
+<testcase name="shouldSee200AfterListAssetsByTypeId()" classname="de.unibremen.informatik.swp.tests.AssetsListTest" time="0.304">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.AssetsListTest]/[method:shouldSee200AfterListAssetsByTypeId()]
+display-name: shouldSee200AfterListAssetsByTypeId()
+]]></system-out>
+</testcase>
+<testcase name="shouldSee409AfterCreateUser()" classname="de.unibremen.informatik.swp.tests.UsersApiTest" time="0.113">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.UsersApiTest]/[method:shouldSee409AfterCreateUser()]
+display-name: shouldSee409AfterCreateUser()
+]]></system-out>
+</testcase>
+<testcase name="shouldSee200AfterListAssetsByCondition()" classname="de.unibremen.informatik.swp.tests.AssetsListTest" time="0.242">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.AssetsListTest]/[method:shouldSee200AfterListAssetsByCondition()]
+display-name: shouldSee200AfterListAssetsByCondition()
+]]></system-out>
+</testcase>
+<testcase name="shouldSee200AfterListAssetsByIsOverdue()" classname="de.unibremen.informatik.swp.tests.AssetsListTest" time="0">
+<skipped><![CDATA[Not implemented yet]]></skipped>
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.AssetsListTest]/[method:shouldSee200AfterListAssetsByIsOverdue()]
+display-name: shouldSee200AfterListAssetsByIsOverdue()
+]]></system-out>
+</testcase>
+<testcase name="shouldSee200AfterGetAssetById()" classname="de.unibremen.informatik.swp.tests.AssetsApiTest" time="0.271">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.AssetsApiTest]/[method:shouldSee200AfterGetAssetById()]
+display-name: shouldSee200AfterGetAssetById()
+]]></system-out>
+</testcase>
+<testcase name="shouldSee409AfterUpdateLocation()" classname="de.unibremen.informatik.swp.tests.LocationsApiTest" time="0.094">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.LocationsApiTest]/[method:shouldSee409AfterUpdateLocation()]
+display-name: shouldSee409AfterUpdateLocation()
+]]></system-out>
+</testcase>
+<testcase name="shouldSee200AfterListAssetTypes()" classname="de.unibremen.informatik.swp.tests.AssetTypesApiTest" time="0.073">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.AssetTypesApiTest]/[method:shouldSee200AfterListAssetTypes()]
+display-name: shouldSee200AfterListAssetTypes()
+]]></system-out>
+</testcase>
+<testcase name="shouldSee204AfterActivateUser()" classname="de.unibremen.informatik.swp.tests.UsersApiTest" time="0.069">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.UsersApiTest]/[method:shouldSee204AfterActivateUser()]
+display-name: shouldSee204AfterActivateUser()
+]]></system-out>
+</testcase>
+<testcase name="shouldSee200AfterListUsers()" classname="de.unibremen.informatik.swp.tests.UsersApiTest" time="0.108">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.UsersApiTest]/[method:shouldSee200AfterListUsers()]
+display-name: shouldSee200AfterListUsers()
+]]></system-out>
+</testcase>
+<testcase name="shouldSee404AfterUpdateAssetType()" classname="de.unibremen.informatik.swp.tests.AssetTypesApiTest" time="0.056">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.AssetTypesApiTest]/[method:shouldSee404AfterUpdateAssetType()]
+display-name: shouldSee404AfterUpdateAssetType()
+]]></system-out>
+</testcase>
+<testcase name="shouldSee409AfterUpdateAsset()" classname="de.unibremen.informatik.swp.tests.AssetsApiTest" time="0.277">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.AssetsApiTest]/[method:shouldSee409AfterUpdateAsset()]
+display-name: shouldSee409AfterUpdateAsset()
+]]></system-out>
+</testcase>
+<testcase name="shouldSee200AfterUpdateLocation()" classname="de.unibremen.informatik.swp.tests.LocationsApiTest" time="0.113">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.LocationsApiTest]/[method:shouldSee200AfterUpdateLocation()]
+display-name: shouldSee200AfterUpdateLocation()
+]]></system-out>
+</testcase>
+<testcase name="shouldSee404AfterGetLocationById()" classname="de.unibremen.informatik.swp.tests.LocationsApiTest" time="0.071">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.LocationsApiTest]/[method:shouldSee404AfterGetLocationById()]
+display-name: shouldSee404AfterGetLocationById()
+]]></system-out>
+</testcase>
+<testcase name="shouldSee409AfterCreateLocation()" classname="de.unibremen.informatik.swp.tests.LocationsApiTest" time="0.063">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.LocationsApiTest]/[method:shouldSee409AfterCreateLocation()]
+display-name: shouldSee409AfterCreateLocation()
+]]></system-out>
+</testcase>
+<testcase name="shouldSee404ForNoneExistingAsset()" classname="de.unibremen.informatik.swp.tests.AssetManagementApiTest" time="0.651">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.AssetManagementApiTest]/[method:shouldSee404ForNoneExistingAsset()]
+display-name: shouldSee404ForNoneExistingAsset()
+]]></system-out>
+</testcase>
+<testcase name="shouldSee404AfterGetUserById()" classname="de.unibremen.informatik.swp.tests.UsersApiTest" time="0.042">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.UsersApiTest]/[method:shouldSee404AfterGetUserById()]
+display-name: shouldSee404AfterGetUserById()
+]]></system-out>
+</testcase>
+<testcase name="shouldSee200AfterGetCurrentUser()" classname="de.unibremen.informatik.swp.tests.AuthApiTest" time="0.047">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.AuthApiTest]/[method:shouldSee200AfterGetCurrentUser()]
+display-name: shouldSee200AfterGetCurrentUser()
+]]></system-out>
+</testcase>
+<testcase name="shouldSee200AfterListAssetsByLocationId()" classname="de.unibremen.informatik.swp.tests.AssetsListTest" time="0.287">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.AssetsListTest]/[method:shouldSee200AfterListAssetsByLocationId()]
+display-name: shouldSee200AfterListAssetsByLocationId()
+]]></system-out>
+</testcase>
+<testcase name="shouldSee201AfterCreateLocation()" classname="de.unibremen.informatik.swp.tests.LocationsApiTest" time="0.061">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.LocationsApiTest]/[method:shouldSee201AfterCreateLocation()]
+display-name: shouldSee201AfterCreateLocation()
+]]></system-out>
+</testcase>
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]
+display-name: JUnit Jupiter
+]]></system-out>
+</testsuite>

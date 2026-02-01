@@ -1,0 +1,71 @@
+services:
+  backend:
+    build:
+      context: ./backend/app
+      dockerfile: Dockerfile
+    container_name: bokerfi-backend
+    ports:
+      - "8080:8080"
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:mariadb://db:3306/bokerfi
+      - SPRING_DATASOURCE_USERNAME=bokerfi_user
+      - SPRING_DATASOURCE_PASSWORD=bokerfi_pass
+      - SPRING_JPA_HIBERNATE_DDL_AUTO=create-drop
+      - SPRING_MAIL_HOST=mailhog
+      - SPRING_MAIL_PORT=1025
+      - TZ=Europe/Berlin
+    depends_on:
+      db:
+        condition: service_healthy
+      mailhog:
+        condition: service_started
+    networks:
+      - bokerfi-net
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: bokerfi-frontend
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+    networks:
+      - bokerfi-net
+
+  db:
+    image: mariadb:10.11
+    container_name: bokerfi-db
+    environment:
+      - MARIADB_ROOT_PASSWORD=root_pass
+      - MARIADB_DATABASE=bokerfi
+      - MARIADB_USER=bokerfi_user
+      - MARIADB_PASSWORD=bokerfi_pass
+    healthcheck:
+      test: [ "CMD", "healthcheck.sh", "--connect", "--innodb_initialized" ]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+    ports:
+      - "3308:3306"
+    volumes:
+      - db-data:/var/lib/mysql
+    networks:
+      - bokerfi-net
+
+  mailhog:
+    image: mailhog/mailhog
+    container_name: bokerfi-mailhog
+    ports:
+      - "1025:1025"
+      - "8025:8025"
+    networks:
+      - bokerfi-net
+
+networks:
+  bokerfi-net:
+    driver: bridge
+
+volumes:
+  db-data:

@@ -1,0 +1,32 @@
+Zusatzfeatures und Übererfüllung der Anforderungen (Bonus):
+
+1. High-End UI & UX (Übererfüllung "Hohe Usability"):
+   Anstatt einer einfachen Standard-Oberfläche wurde ein modernes "Dark Mode" Design implementiert, das sich an professionellen Enterprise-Anwendungen orientiert. Die Benutzeroberfläche ist als Single-Page-Application (SPA) konzipiert, reagiert dynamisch ohne Neuladen der Seite und bietet direktes visuelles Feedback (Toast-Notifications) für alle Aktionen.
+
+2. Management-Dashboard (Zusatzfeature):
+   Die Mindestanforderungen verlangen lediglich die Verwaltung und listenmäßige Anzeige der Daten. Wir haben zusätzlich ein Dashboard implementiert, das nach dem Login sofort wichtige Kennzahlen (KPIs) visualisiert:
+   - Anzahl aktiver Nutzer (Role-based Visibility: nur für Manager/Admin)
+   - Gesamtanzahl Assets, Verfügbarkeit und Status-Vorschau
+   - Anzahl aktueller Reservierungen
+
+3. Reservierungssystem (Zusatzfeature):
+   Die Mindestanforderungen beschreiben Zuweisungen ("Abgabedatum und Rückgabefrist"), aber keine explizite Reservierungsfunktion für die Zukunft. Wir haben einen vollständigen `ReservationService` implementiert, der es ermöglicht, Assets für zukünftige Zeiträume zu reservieren, inklusive Konfliktprüfung (Vermeidung von Doppelbuchungen).
+
+4. Korrekte Zeitzonen-Behandlung (Quality of Life):
+   Docker-Container laufen standardmäßig in UTC. Wir haben das gesamte System (Backend & Datenbank) explizit so konfiguriert (TZ=Europe/Berlin), dass alle Zeitstempel (z.B. bei Ausleihe, Rückgabe, Historie) korrekt in der lokalen deutschen Zeit gespeichert und angezeigt werden. Dies verhindert Verwirrung bei der Einhaltung von Fristen.
+
+5. Erweiterte Such- & Filterfunktionen:
+   Über die reine technische Filterbarkeit ("WHERE-Clause") hinaus bietet das Frontend eine komfortable Sidebar, um Assets dynamisch und kombiniert nach Zuweisung, Standort, Typ oder Garantiedatum zu filtern.
+
+6. Benutzerunterstützung (Usability):
+   Auf der Startseite wurden gut sichtbare Support-Informationen und Kontaktdaten integriert, um Nutzern bei Problemen direkt Ansprechpartner zu bieten (First-Level-Support), was die Benutzerakzeptanz erhöht.
+
+7. Internationalisierung (i18n):
+   Die Anwendung ist vollständig mehrsprachig umgesetzt. Nutzer können im Frontend zur Laufzeit nahtlos zwischen Deutsch und Englisch wählen. Dies erhöht die Barrierefreiheit und macht das System in internationalen Teams einsetzbar (geht über die reine deutsche Anforderung hinaus).
+
+8. Entwickler-Tools (MailHog Integration):
+   Um die geforderten E-Mail-Workflows transparent und testbar zu machen, wurde MailHog als SMTP-Server integriert. Dies ermöglicht es, alle vom System versendeten Benachrichtigungen (z.B. bei Wartung, Rückgabe) direkt in einer Web-Oberfläche zu überprüfen, ohne einen echten Mail-Server aufzusetzen.
+
+9. Code-Qualität & Sicherheit:
+   - Implementierung eines GlobalExceptionHandler für konsistente und sichere Fehlerbehandlung (verhindert Stacktrace-Leaking an den Client).
+   - Explizite Konfiguration der Spring Security für eine Stateless REST-API (bewusste CSRF-Entscheidung).

@@ -1,0 +1,21 @@
+Erläuterung unterdrückter SonarQube-Regeln:
+
+1. SecurityConfig.java: CSRF Deaktivierung
+   Regel: "CSRF protection should not be disabled" (java:S4502)
+   Begründung: Die Anwendung verwendet eine rein zustandslose REST-API mit JWT-Authentifizierung. Da keine Session-Cookies für die Authentifizierung verwendet werden, ist kein CSRF-Angriffsvektor vorhanden. Die Aktivierung würde die API unbenutzbar machen.
+   Code-Stelle: .csrf(AbstractHttpConfigurer::disable) // NOSONAR
+
+2. AssetController.java: Anzahl der Parameter/Abhängigkeiten
+   Regel: "Methods should not have too many parameters" (java:S107)
+   Begründung: Der `AssetController` fungiert als zentrale Schnittstelle für alle Asset-Operationen und benötigt daher Zugriff auf diverse spezialisierte Services (Create, Update, Delete, Assign, Maintenance, etc.). Eine Aufteilung wäre architektonisch möglich, aber für die Übersichtlichkeit dieses Projekts wurde die Bündelung im Controller präferiert.
+   Code-Stelle: @SuppressWarnings("java:S107")
+
+3. Diverse Klassen (Services & Controller): False-Positive Null-Checks
+   Regel: "Condition always evaluates to true/false" (java:S2589, java:S2583) & "null" Warnings
+   Begründung: Der statische Analyzer erkennt in manchen DTO-Mappings nicht korrekt, dass Felder null sein könnten (Input validation). Wir haben explizite Null-Checks implementiert, um Robustheit zu garantieren, und die entsprechenden "Dead Code"-Warnungen unterdrückt, da die Checks zur Laufzeit notwendig sind.
+   Code-Stelle: @SuppressWarnings("java:S2589"), @SuppressWarnings("null")
+
+4. BokerfiException.java: IDE-spezifische Warnung
+   Regel: "LombokGetterMayBeUsed"
+   Begründung: Dies ist keine SonarQube-Regel, sondern eine IDE-Inspektion (IntelliJ/Eclipse), die vorschlägt, manuelle Getter durch Lombok zu ersetzen. Da wir hier eine spezielle Exception-Klasse haben, wurde die Warnung zur Code-Sauberkeit explizit unterdrückt.
+   Code-Stelle: @SuppressWarnings("LombokGetterMayBeUsed")

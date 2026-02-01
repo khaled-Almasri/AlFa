@@ -1,0 +1,14 @@
+Für die Bewertung der Testabdeckung sollen folgende nicht-triviale Methoden herangezogen werden:
+(Diese Methoden wurden durch entsprechende Unit-Tests vollständig abgedeckt).
+
+1. Klasse: de.unibremen.cs.swp.bokerfi.service.AssetService
+   Methode: search
+   Begründung: Diese Methode implementiert die zentrale Suchlogik für Assets. Sie verarbeitet diverse optionale Filterkriterien (Assignee, Location, Type) und kombiniert diese logisch ("UND"-Verknüpfung), was eine hohe Komplexität in der Datenabfrage darstellt.
+
+2. Klasse: de.unibremen.cs.swp.bokerfi.service.AssetMaintenanceFinishService
+   Methode: finishMaintenance
+   Begründung: Diese Methode enthält die Zustandsmaschine (State Machine) für den Abschluss von Wartungsarbeiten. Sie entscheidet basierend auf dem Ergebnis (Erfolg/Misserfolg), ob das Asset zurück in den Bestand ("IN_STOCK") geht oder ausgemustert ("RETIRED") wird, und triggert entsprechende Benachrichtigungen.
+
+3. Klasse: de.unibremen.cs.swp.bokerfi.service.AssetAssignService
+   Methode: assign
+   Begründung: Diese Methode steuert den kritischen Prozess der Asset-Zuweisung. Sie prüft die Verfügbarkeit (Konflikt mit existierenden Zuweisungen), validiert den Empfänger und setzt relevante Zeitstempel (assignDate, returnDeadline), was essentiell für die Datenkonsistenz ist.

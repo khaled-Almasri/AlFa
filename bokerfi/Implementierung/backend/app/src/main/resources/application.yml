@@ -1,0 +1,57 @@
+# ===============================
+# Server
+# ===============================
+server:
+  servlet:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+
+  error:
+    include-message: always
+    include-binding-errors: always
+    include-stacktrace: always
+# ===============================
+# Spring / Datenbank / Mail
+# ===============================
+spring:
+  datasource:
+    url: ${SPRING_DATASOURCE_URL:jdbc:mariadb://localhost:3307/bokerfi}
+    username: ${SPRING_DATASOURCE_USERNAME:bokerfi}
+    password: ${SPRING_DATASOURCE_PASSWORD:bokerfi}
+    driver-class-name: org.mariadb.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: ${SPRING_JPA_HIBERNATE_DDL_AUTO:create-drop}
+    show-sql: true
+    open-in-view: false
+
+  mail:
+    host: ${SPRING_MAIL_HOST:localhost}
+    port: ${SPRING_MAIL_PORT:1025}
+    test-connection: true
+
+# ===============================
+# Logging
+# ===============================
+logging:
+  level:
+    org.springframework.web: DEBUG
+    de.unibremen.cs.swp.bokerfi: DEBUG
+    org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor: TRACE
+    org.springframework.web.filter.CommonsRequestLoggingFilter: DEBUG
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+
+
+bokerfi:
+  mail:
+    admin: admin@test.de
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: mappings

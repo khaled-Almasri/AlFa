@@ -1,0 +1,80 @@
+@adminAuth = YWRtaW5AdGVzdC5kZTpwYXNzd29yZA==
+
+### GET alle Personen (Admin)
+GET http://localhost:8080/api/persons
+Accept: application/json
+Authorization: Basic {{adminAuth}}
+
+
+### POST gültige Person (201)
+POST http://localhost:8080/api/persons
+Content-Type: application/json
+
+{
+  "firstName": "Max",
+  "lastName": "Mustermann",
+  "email": "max@test.de"
+}
+
+### POST ungültige Person (Validation → 400)
+POST http://localhost:8080/api/persons
+Content-Type: application/json
+
+{
+  "firstName": "",
+  "lastName": "",
+  "email": "abc"
+}
+
+### PATCH gültige Person (200)
+PATCH http://localhost:8080/api/persons/{uuid}
+If-Match: 0
+Content-Type: application/json
+
+{
+  "firstName": "Max",
+  "lastName": "Mustermann"
+}
+
+### PATCH ungültige Person (Validation → 400)
+PATCH http://localhost:8080/api/persons/{uuid}
+Content-Type: application/json
+
+{
+  "firstName": "Max",
+  "lastName": "Mustermann"
+}
+
+### PATCH unbekannte UUID (404)
+PATCH http://localhost:8080/api/persons/{uuid}
+If-Match: 1
+Content-Type: application/json
+
+{
+  "firstName": "Test"
+}
+
+### DELETE – Person existiert nicht (404)
+DELETE http://localhost:8080/api/persons/801199994147692596
+
+###
+
+### POST Person für DELETE-Test anlegen
+POST http://localhost:8080/api/persons
+Content-Type: application/json
+
+{
+  "firstName": "Delete",
+  "lastName": "Test",
+  "email": "delete@test.de"
+}
+
+###
+
+### DELETE existierende Person
+DELETE http://localhost:8080/api/persons/{uuid}
+###
+
+### DELETE dieselbe Person erneut (404)
+DELETE http://localhost:8080/api/persons/{uuid}
+

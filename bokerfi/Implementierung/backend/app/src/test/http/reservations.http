@@ -1,0 +1,77 @@
+### GET alle Reservierungen (ADMIN)
+GET http://localhost:8080/api/reservations
+Authorization: Basic admin@test.de password
+Accept: application/json
+
+### POST Reservierung anlegen – ISO Format (201)
+POST http://localhost:8080/api/reservations
+Content-Type: application/json
+
+{
+  "start": "2025-11-03T08:00:00",
+  "end": "2025-11-03T10:00:00",
+  "personUuid": 801537158039793715,
+  "facilityUuid": 801514260581654617
+}
+
+###
+POST http://localhost:8080/api/reservations
+Authorization: Basic employee@test.de password
+Content-Type: application/json
+
+{
+"personUuid": 802144321786089692,
+"assetUuid": 802144321966444639,
+"start": "2026-02-01T12:00",
+"end": "2026-02-01T13:00"
+}
+
+### 6) Konflikt: Überschneidung -> muss FEHLER geben (CONFLICT)
+POST http://localhost:8080/api/reservations
+Authorization: Basic employee@test.de password
+Content-Type: application/json
+Accept: application/json
+
+{
+  "personUuid": 801535271508861173,
+  "facilityUuid": 801535271739547828,
+  "start": "2026-02-02T11:00",
+  "end": "2026-02-02T13:00"
+}
+
+### POST Reservierung Konflikt – ISO Format (409)
+POST http://localhost:8080/api/reservations
+Content-Type: application/json
+
+{
+  "start": "2025-11-03T09:00:00",
+  "end": "2025-11-03T11:00:00",
+  "personUuid": 800501266110571409,
+  "facilityUuid": 800501528380400566
+}
+
+###
+
+### POST Reservierung ohne Konflikt – ISO Format (201)
+POST http://localhost:8080/api/reservations
+Content-Type: application/json
+
+{
+  "start": "2025-11-03T11:00:00",
+  "end": "2025-11-03T12:00:00",
+  "personUuid": 800501266110571409,
+  "facilityUuid": 800501528380400566
+}
+
+### POST Reservierung – unbekannte Person (404)
+POST http://localhost:8080/api/reservations
+Content-Type: application/json
+
+{
+  "start": "2026-03-02T08:00:00",
+  "end": "2026-03-02T10:00:00",
+  "personUuid": 999999,
+  "facilityUuid": 800501528380400566
+}
+
+###
