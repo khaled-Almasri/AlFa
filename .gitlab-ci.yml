@@ -1,0 +1,26 @@
+stages:
+  - tests
+
+variables:
+  MAVEN_OPTS: "-Dmaven.repo.local=.m2/repository"
+
+cache:
+  key: ${CI_PROJECT_NAME}
+  paths:
+    - .m2/repository
+
+tests:
+  stage: tests
+  image: gitlab.informatik.uni-bremen.de:5005/lorenz1/ci-test/unified:latest
+  script:
+    - /bin/bash /entrypoint.sh
+  artifacts:
+    when: always
+    reports:
+      junit: $CI_PROJECT_DIR/reports/test-results/TEST-*.xml
+      coverage_report:
+        coverage_format: jacoco
+        path: $CI_PROJECT_DIR/reports/jacoco/jacoco.xml
+    paths:
+      - $CI_PROJECT_DIR/reports
+      - $CI_PROJECT_DIR/build
