@@ -324,7 +324,8 @@ window.toggleLanguage = () => {
 };
 
 // API Base URL (absolute for Nginx/CORS)
-const API_BASE = 'http://localhost:8080/api';
+// API Base URL (Dynamic for remote access, assuming Backend is on 8080)
+const API_BASE = `http://${window.location.hostname}:8080/api`;
 
 // --- Utils ---
 const showToast = (msg, type = 'info') => {
@@ -1005,7 +1006,7 @@ window.handleLogin = async (e) => {
 window.retireAsset = async (uuid) => {
     if (!confirm("Confirm retire? Asset cannot be used again.")) return;
     try {
-        const response = await fetch(`${API_BASE_URL}/assets/${uuid}/retire`, {
+        const response = await fetch(`${API_BASE}/assets/${uuid}/retire`, {
             method: 'POST',
             headers: { 'Authorization': `Bearer ${state.user.token}` }
         });

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="JUnit Jupiter" tests="63" skipped="5" failures="0" errors="0" time="10.984" hostname="Amjad" timestamp="2026-02-01T19:17:40">
+<testsuite name="JUnit Jupiter" tests="63" skipped="5" failures="0" errors="0" time="10.436" hostname="Amjad" timestamp="2026-02-02T12:33:47">
 <properties>
 <property name="api.url" value="http://localhost:8080"/>
 <property name="file.encoding" value="UTF-8"/>
@@ -63,55 +63,55 @@ unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.Asset
 display-name: shouldSee200AfterListAssetsByStatus()
 ]]></system-out>
 </testcase>
-<testcase name="shouldSee204AfterDeleteLocation()" classname="de.unibremen.informatik.swp.tests.LocationsApiTest" time="0.378">
+<testcase name="shouldSee204AfterDeleteLocation()" classname="de.unibremen.informatik.swp.tests.LocationsApiTest" time="0.382">
 <system-out><![CDATA[
 unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.LocationsApiTest]/[method:shouldSee204AfterDeleteLocation()]
 display-name: shouldSee204AfterDeleteLocation()
 ]]></system-out>
 </testcase>
-<testcase name="shouldSee200AfterUpdateAsset()" classname="de.unibremen.informatik.swp.tests.AssetsApiTest" time="0.304">
+<testcase name="shouldSee200AfterUpdateAsset()" classname="de.unibremen.informatik.swp.tests.AssetsApiTest" time="0.427">
 <system-out><![CDATA[
 unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.AssetsApiTest]/[method:shouldSee200AfterUpdateAsset()]
 display-name: shouldSee200AfterUpdateAsset()
 ]]></system-out>
 </testcase>
-<testcase name="shouldSee409AfterCreateAsset()" classname="de.unibremen.informatik.swp.tests.AssetsApiTest" time="0.279">
+<testcase name="shouldSee409AfterCreateAsset()" classname="de.unibremen.informatik.swp.tests.AssetsApiTest" time="0.213">
 <system-out><![CDATA[
 unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.AssetsApiTest]/[method:shouldSee409AfterCreateAsset()]
 display-name: shouldSee409AfterCreateAsset()
 ]]></system-out>
 </testcase>
-<testcase name="shouldSee200AfterListAssetsByPurchaseDate()" classname="de.unibremen.informatik.swp.tests.AssetsListTest" time="2.003">
+<testcase name="shouldSee200AfterListAssetsByPurchaseDate()" classname="de.unibremen.informatik.swp.tests.AssetsListTest" time="1.919">
 <system-out><![CDATA[
 unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.AssetsListTest]/[method:shouldSee200AfterListAssetsByPurchaseDate()]
 display-name: shouldSee200AfterListAssetsByPurchaseDate()
 ]]></system-out>
 </testcase>
-<testcase name="shouldSee200AfterListLocations()" classname="de.unibremen.informatik.swp.tests.LocationsApiTest" time="0.102">
+<testcase name="shouldSee200AfterListLocations()" classname="de.unibremen.informatik.swp.tests.LocationsApiTest" time="0.093">
 <system-out><![CDATA[
 unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.LocationsApiTest]/[method:shouldSee200AfterListLocations()]
 display-name: shouldSee200AfterListLocations()
 ]]></system-out>
 </testcase>
-<testcase name="shouldSee404AfterGetAssetById()" classname="de.unibremen.informatik.swp.tests.AssetsApiTest" time="0.039">
+<testcase name="shouldSee404AfterGetAssetById()" classname="de.unibremen.informatik.swp.tests.AssetsApiTest" time="0.036">
 <system-out><![CDATA[
 unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.AssetsApiTest]/[method:shouldSee404AfterGetAssetById()]
 display-name: shouldSee404AfterGetAssetById()
 ]]></system-out>
 </testcase>
-<testcase name="shouldSee409AfterUpdateAssetType()" classname="de.unibremen.informatik.swp.tests.AssetTypesApiTest" time="0.086">
+<testcase name="shouldSee409AfterUpdateAssetType()" classname="de.unibremen.informatik.swp.tests.AssetTypesApiTest" time="0.088">
 <system-out><![CDATA[
 unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.AssetTypesApiTest]/[method:shouldSee409AfterUpdateAssetType()]
 display-name: shouldSee409AfterUpdateAssetType()
 ]]></system-out>
 </testcase>
-<testcase name="shouldSee204AfterDeactivateUser()" classname="de.unibremen.informatik.swp.tests.UsersApiTest" time="0.099">
+<testcase name="shouldSee204AfterDeactivateUser()" classname="de.unibremen.informatik.swp.tests.UsersApiTest" time="0.102">
 <system-out><![CDATA[
 unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.UsersApiTest]/[method:shouldSee204AfterDeactivateUser()]
 display-name: shouldSee204AfterDeactivateUser()
 ]]></system-out>
 </testcase>
-<testcase name="shouldSee404AfterActivateUser()" classname="de.unibremen.informatik.swp.tests.UsersApiTest" time="0.038">
+<testcase name="shouldSee404AfterActivateUser()" classname="de.unibremen.informatik.swp.tests.UsersApiTest" time="0.048">
 <system-out><![CDATA[
 unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.UsersApiTest]/[method:shouldSee404AfterActivateUser()]
 display-name: shouldSee404AfterActivateUser()
@@ -124,31 +124,31 @@ unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.Asset
 display-name: shouldSee200AfterListAssetsByPagination()
 ]]></system-out>
 </testcase>
-<testcase name="shouldSee204AfterDeleteAssetType()" classname="de.unibremen.informatik.swp.tests.AssetTypesApiTest" time="0.092">
+<testcase name="shouldSee204AfterDeleteAssetType()" classname="de.unibremen.informatik.swp.tests.AssetTypesApiTest" time="0.087">
 <system-out><![CDATA[
 unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.AssetTypesApiTest]/[method:shouldSee204AfterDeleteAssetType()]
 display-name: shouldSee204AfterDeleteAssetType()
 ]]></system-out>
 </testcase>
-<testcase name="shouldSee200AfterListAssetsByWarrantyExpiringBefore()" classname="de.unibremen.informatik.swp.tests.AssetsListTest" time="0.28">
+<testcase name="shouldSee200AfterListAssetsByWarrantyExpiringBefore()" classname="de.unibremen.informatik.swp.tests.AssetsListTest" time="0.223">
 <system-out><![CDATA[
 unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.AssetsListTest]/[method:shouldSee200AfterListAssetsByWarrantyExpiringBefore()]
 display-name: shouldSee200AfterListAssetsByWarrantyExpiringBefore()
 ]]></system-out>
 </testcase>
-<testcase name="shouldSee201AfterCreateAsset()" classname="de.unibremen.informatik.swp.tests.AssetsApiTest" time="0.18">
+<testcase name="shouldSee201AfterCreateAsset()" classname="de.unibremen.informatik.swp.tests.AssetsApiTest" time="0.199">
 <system-out><![CDATA[
 unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.AssetsApiTest]/[method:shouldSee201AfterCreateAsset()]
 display-name: shouldSee201AfterCreateAsset()
 ]]></system-out>
 </testcase>
-<testcase name="shouldSee401AfterLogin()" classname="de.unibremen.informatik.swp.tests.AuthApiTest" time="0.028">
+<testcase name="shouldSee401AfterLogin()" classname="de.unibremen.informatik.swp.tests.AuthApiTest" time="0.04">
 <system-out><![CDATA[
 unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.AuthApiTest]/[method:shouldSee401AfterLogin()]
 display-name: shouldSee401AfterLogin()
 ]]></system-out>
 </testcase>
-<testcase name="shouldSee200AfterGetUserById()" classname="de.unibremen.informatik.swp.tests.UsersApiTest" time="0.074">
+<testcase name="shouldSee200AfterGetUserById()" classname="de.unibremen.informatik.swp.tests.UsersApiTest" time="0.096">
 <system-out><![CDATA[
 unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.UsersApiTest]/[method:shouldSee200AfterGetUserById()]
 display-name: shouldSee200AfterGetUserById()
@@ -161,13 +161,13 @@ unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.Asset
 display-name: shouldSee200AfterListAssetsByIsActive()
 ]]></system-out>
 </testcase>
-<testcase name="shouldSee200AfterGetAssetTypeById()" classname="de.unibremen.informatik.swp.tests.AssetTypesApiTest" time="0.1">
+<testcase name="shouldSee200AfterGetAssetTypeById()" classname="de.unibremen.informatik.swp.tests.AssetTypesApiTest" time="0.085">
 <system-out><![CDATA[
 unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.AssetTypesApiTest]/[method:shouldSee200AfterGetAssetTypeById()]
 display-name: shouldSee200AfterGetAssetTypeById()
 ]]></system-out>
 </testcase>
-<testcase name="shouldSee200AfterUpdateUser()" classname="de.unibremen.informatik.swp.tests.UsersApiTest" time="0.094">
+<testcase name="shouldSee200AfterUpdateUser()" classname="de.unibremen.informatik.swp.tests.UsersApiTest" time="0.095">
 <system-out><![CDATA[
 unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.UsersApiTest]/[method:shouldSee200AfterUpdateUser()]
 display-name: shouldSee200AfterUpdateUser()
@@ -179,103 +179,103 @@ unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.AuthA
 display-name: shouldSee200AfterLogin()
 ]]></system-out>
 </testcase>
-<testcase name="statefulTestAdminPathA()" classname="de.unibremen.informatik.swp.tests.AssetManagementApiTest" time="0.881">
+<testcase name="statefulTestAdminPathA()" classname="de.unibremen.informatik.swp.tests.AssetManagementApiTest" time="0.808">
 <system-out><![CDATA[
 unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.AssetManagementApiTest]/[method:statefulTestAdminPathA()]
 display-name: statefulTestAdminPathA()
 ]]></system-out>
 </testcase>
-<testcase name="shouldSee404AfterDeactivateUser()" classname="de.unibremen.informatik.swp.tests.UsersApiTest" time="0.042">
+<testcase name="shouldSee404AfterDeactivateUser()" classname="de.unibremen.informatik.swp.tests.UsersApiTest" time="0.044">
 <system-out><![CDATA[
 unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.UsersApiTest]/[method:shouldSee404AfterDeactivateUser()]
 display-name: shouldSee404AfterDeactivateUser()
 ]]></system-out>
 </testcase>
-<testcase name="shouldSee200AfterListAssetsByAssigneeId()" classname="de.unibremen.informatik.swp.tests.AssetsListTest" time="0.61">
+<testcase name="shouldSee200AfterListAssetsByAssigneeId()" classname="de.unibremen.informatik.swp.tests.AssetsListTest" time="0.546">
 <system-out><![CDATA[
 unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.AssetsListTest]/[method:shouldSee200AfterListAssetsByAssigneeId()]
 display-name: shouldSee200AfterListAssetsByAssigneeId()
 ]]></system-out>
 </testcase>
-<testcase name="shouldSee404AfterDeleteAsset()" classname="de.unibremen.informatik.swp.tests.AssetsApiTest" time="0.038">
+<testcase name="shouldSee404AfterDeleteAsset()" classname="de.unibremen.informatik.swp.tests.AssetsApiTest" time="0.035">
 <system-out><![CDATA[
 unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.AssetsApiTest]/[method:shouldSee404AfterDeleteAsset()]
 display-name: shouldSee404AfterDeleteAsset()
 ]]></system-out>
 </testcase>
-<testcase name="shouldSee200AfterHealthCheck()" classname="de.unibremen.informatik.swp.tests.HealthApiTest" time="0.008">
+<testcase name="shouldSee200AfterHealthCheck()" classname="de.unibremen.informatik.swp.tests.HealthApiTest" time="0.009">
 <system-out><![CDATA[
 unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.HealthApiTest]/[method:shouldSee200AfterHealthCheck()]
 display-name: shouldSee200AfterHealthCheck()
 ]]></system-out>
 </testcase>
-<testcase name="shouldSee400AfterChangePassword()" classname="de.unibremen.informatik.swp.tests.AuthApiTest" time="0.104">
+<testcase name="shouldSee400AfterChangePassword()" classname="de.unibremen.informatik.swp.tests.AuthApiTest" time="0.108">
 <system-out><![CDATA[
 unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.AuthApiTest]/[method:shouldSee400AfterChangePassword()]
 display-name: shouldSee400AfterChangePassword()
 ]]></system-out>
 </testcase>
-<testcase name="shouldSee200AfterListAssetsByName()" classname="de.unibremen.informatik.swp.tests.AssetsListTest" time="0.268">
+<testcase name="shouldSee200AfterListAssetsByName()" classname="de.unibremen.informatik.swp.tests.AssetsListTest" time="0.264">
 <system-out><![CDATA[
 unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.AssetsListTest]/[method:shouldSee200AfterListAssetsByName()]
 display-name: shouldSee200AfterListAssetsByName()
 ]]></system-out>
 </testcase>
-<testcase name="shouldSee404AfterGetAssetTypeById()" classname="de.unibremen.informatik.swp.tests.AssetTypesApiTest" time="0.037">
+<testcase name="shouldSee404AfterGetAssetTypeById()" classname="de.unibremen.informatik.swp.tests.AssetTypesApiTest" time="0.043">
 <system-out><![CDATA[
 unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.AssetTypesApiTest]/[method:shouldSee404AfterGetAssetTypeById()]
 display-name: shouldSee404AfterGetAssetTypeById()
 ]]></system-out>
 </testcase>
-<testcase name="shouldSee404AfterDeleteLocation()" classname="de.unibremen.informatik.swp.tests.LocationsApiTest" time="0.048">
+<testcase name="shouldSee404AfterDeleteLocation()" classname="de.unibremen.informatik.swp.tests.LocationsApiTest" time="0.039">
 <system-out><![CDATA[
 unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.LocationsApiTest]/[method:shouldSee404AfterDeleteLocation()]
 display-name: shouldSee404AfterDeleteLocation()
 ]]></system-out>
 </testcase>
-<testcase name="shouldSee200AfterListAssetsByInventoryNumber()" classname="de.unibremen.informatik.swp.tests.AssetsListTest" time="0.276">
+<testcase name="shouldSee200AfterListAssetsByInventoryNumber()" classname="de.unibremen.informatik.swp.tests.AssetsListTest" time="0.234">
 <system-out><![CDATA[
 unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.AssetsListTest]/[method:shouldSee200AfterListAssetsByInventoryNumber()]
 display-name: shouldSee200AfterListAssetsByInventoryNumber()
 ]]></system-out>
 </testcase>
-<testcase name="shouldSee200AfterGetLocationById()" classname="de.unibremen.informatik.swp.tests.LocationsApiTest" time="0.067">
+<testcase name="shouldSee200AfterGetLocationById()" classname="de.unibremen.informatik.swp.tests.LocationsApiTest" time="0.055">
 <system-out><![CDATA[
 unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.LocationsApiTest]/[method:shouldSee200AfterGetLocationById()]
 display-name: shouldSee200AfterGetLocationById()
 ]]></system-out>
 </testcase>
-<testcase name="shouldSee401AfterChangePassword()" classname="de.unibremen.informatik.swp.tests.AuthApiTest" time="0.06">
+<testcase name="shouldSee401AfterChangePassword()" classname="de.unibremen.informatik.swp.tests.AuthApiTest" time="0.067">
 <system-out><![CDATA[
 unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.AuthApiTest]/[method:shouldSee401AfterChangePassword()]
 display-name: shouldSee401AfterChangePassword()
 ]]></system-out>
 </testcase>
-<testcase name="shouldSee204AfterDeleteAsset()" classname="de.unibremen.informatik.swp.tests.AssetsApiTest" time="0.257">
+<testcase name="shouldSee204AfterDeleteAsset()" classname="de.unibremen.informatik.swp.tests.AssetsApiTest" time="0.343">
 <system-out><![CDATA[
 unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.AssetsApiTest]/[method:shouldSee204AfterDeleteAsset()]
 display-name: shouldSee204AfterDeleteAsset()
 ]]></system-out>
 </testcase>
-<testcase name="shouldSee200AfterUpdateAssetType()" classname="de.unibremen.informatik.swp.tests.AssetTypesApiTest" time="0.053">
+<testcase name="shouldSee200AfterUpdateAssetType()" classname="de.unibremen.informatik.swp.tests.AssetTypesApiTest" time="0.045">
 <system-out><![CDATA[
 unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.AssetTypesApiTest]/[method:shouldSee200AfterUpdateAssetType()]
 display-name: shouldSee200AfterUpdateAssetType()
 ]]></system-out>
 </testcase>
-<testcase name="shouldSee404AfterDeleteAssetType()" classname="de.unibremen.informatik.swp.tests.AssetTypesApiTest" time="0.057">
+<testcase name="shouldSee404AfterDeleteAssetType()" classname="de.unibremen.informatik.swp.tests.AssetTypesApiTest" time="0.036">
 <system-out><![CDATA[
 unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.AssetTypesApiTest]/[method:shouldSee404AfterDeleteAssetType()]
 display-name: shouldSee404AfterDeleteAssetType()
 ]]></system-out>
 </testcase>
-<testcase name="shouldSee401AfterGetCurrentUser()" classname="de.unibremen.informatik.swp.tests.AuthApiTest" time="0.017">
+<testcase name="shouldSee401AfterGetCurrentUser()" classname="de.unibremen.informatik.swp.tests.AuthApiTest" time="0.013">
 <system-out><![CDATA[
 unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.AuthApiTest]/[method:shouldSee401AfterGetCurrentUser()]
 display-name: shouldSee401AfterGetCurrentUser()
 ]]></system-out>
 </testcase>
-<testcase name="shouldSee404AfterUpdateLocation()" classname="de.unibremen.informatik.swp.tests.LocationsApiTest" time="0.054">
+<testcase name="shouldSee404AfterUpdateLocation()" classname="de.unibremen.informatik.swp.tests.LocationsApiTest" time="0.052">
 <system-out><![CDATA[
 unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.LocationsApiTest]/[method:shouldSee404AfterUpdateLocation()]
 display-name: shouldSee404AfterUpdateLocation()
@@ -288,37 +288,37 @@ unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.Asset
 display-name: shouldSee200AfterListAssetsByFullTextSearch()
 ]]></system-out>
 </testcase>
-<testcase name="shouldSee409AfterUpdateUser()" classname="de.unibremen.informatik.swp.tests.UsersApiTest" time="0.121">
+<testcase name="shouldSee409AfterUpdateUser()" classname="de.unibremen.informatik.swp.tests.UsersApiTest" time="0.117">
 <system-out><![CDATA[
 unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.UsersApiTest]/[method:shouldSee409AfterUpdateUser()]
 display-name: shouldSee409AfterUpdateUser()
 ]]></system-out>
 </testcase>
-<testcase name="shouldSee201AfterCreateUser()" classname="de.unibremen.informatik.swp.tests.UsersApiTest" time="0.051">
+<testcase name="shouldSee201AfterCreateUser()" classname="de.unibremen.informatik.swp.tests.UsersApiTest" time="0.043">
 <system-out><![CDATA[
 unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.UsersApiTest]/[method:shouldSee201AfterCreateUser()]
 display-name: shouldSee201AfterCreateUser()
 ]]></system-out>
 </testcase>
-<testcase name="shouldSee201AfterCreateAssetType()" classname="de.unibremen.informatik.swp.tests.AssetTypesApiTest" time="0.055">
+<testcase name="shouldSee201AfterCreateAssetType()" classname="de.unibremen.informatik.swp.tests.AssetTypesApiTest" time="0.041">
 <system-out><![CDATA[
 unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.AssetTypesApiTest]/[method:shouldSee201AfterCreateAssetType()]
 display-name: shouldSee201AfterCreateAssetType()
 ]]></system-out>
 </testcase>
-<testcase name="shouldSee409AfterCreateAssetType()" classname="de.unibremen.informatik.swp.tests.AssetTypesApiTest" time="0.082">
+<testcase name="shouldSee409AfterCreateAssetType()" classname="de.unibremen.informatik.swp.tests.AssetTypesApiTest" time="0.08">
 <system-out><![CDATA[
 unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.AssetTypesApiTest]/[method:shouldSee409AfterCreateAssetType()]
 display-name: shouldSee409AfterCreateAssetType()
 ]]></system-out>
 </testcase>
-<testcase name="shouldSee204AfterChangePassword()" classname="de.unibremen.informatik.swp.tests.AuthApiTest" time="0.078">
+<testcase name="shouldSee204AfterChangePassword()" classname="de.unibremen.informatik.swp.tests.AuthApiTest" time="0.072">
 <system-out><![CDATA[
 unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.AuthApiTest]/[method:shouldSee204AfterChangePassword()]
 display-name: shouldSee204AfterChangePassword()
 ]]></system-out>
 </testcase>
-<testcase name="shouldSee404AfterUpdateAsset()" classname="de.unibremen.informatik.swp.tests.AssetsApiTest" time="0.047">
+<testcase name="shouldSee404AfterUpdateAsset()" classname="de.unibremen.informatik.swp.tests.AssetsApiTest" time="0.041">
 <system-out><![CDATA[
 unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.AssetsApiTest]/[method:shouldSee404AfterUpdateAsset()]
 display-name: shouldSee404AfterUpdateAsset()
@@ -330,13 +330,13 @@ unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.Asset
 display-name: shouldSee200AfterListAssetsByTypeId()
 ]]></system-out>
 </testcase>
-<testcase name="shouldSee409AfterCreateUser()" classname="de.unibremen.informatik.swp.tests.UsersApiTest" time="0.113">
+<testcase name="shouldSee409AfterCreateUser()" classname="de.unibremen.informatik.swp.tests.UsersApiTest" time="0.11">
 <system-out><![CDATA[
 unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.UsersApiTest]/[method:shouldSee409AfterCreateUser()]
 display-name: shouldSee409AfterCreateUser()
 ]]></system-out>
 </testcase>
-<testcase name="shouldSee200AfterListAssetsByCondition()" classname="de.unibremen.informatik.swp.tests.AssetsListTest" time="0.242">
+<testcase name="shouldSee200AfterListAssetsByCondition()" classname="de.unibremen.informatik.swp.tests.AssetsListTest" time="0.243">
 <system-out><![CDATA[
 unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.AssetsListTest]/[method:shouldSee200AfterListAssetsByCondition()]
 display-name: shouldSee200AfterListAssetsByCondition()
@@ -349,91 +349,91 @@ unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.Asset
 display-name: shouldSee200AfterListAssetsByIsOverdue()
 ]]></system-out>
 </testcase>
-<testcase name="shouldSee200AfterGetAssetById()" classname="de.unibremen.informatik.swp.tests.AssetsApiTest" time="0.271">
+<testcase name="shouldSee200AfterGetAssetById()" classname="de.unibremen.informatik.swp.tests.AssetsApiTest" time="0.264">
 <system-out><![CDATA[
 unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.AssetsApiTest]/[method:shouldSee200AfterGetAssetById()]
 display-name: shouldSee200AfterGetAssetById()
 ]]></system-out>
 </testcase>
-<testcase name="shouldSee409AfterUpdateLocation()" classname="de.unibremen.informatik.swp.tests.LocationsApiTest" time="0.094">
+<testcase name="shouldSee409AfterUpdateLocation()" classname="de.unibremen.informatik.swp.tests.LocationsApiTest" time="0.085">
 <system-out><![CDATA[
 unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.LocationsApiTest]/[method:shouldSee409AfterUpdateLocation()]
 display-name: shouldSee409AfterUpdateLocation()
 ]]></system-out>
 </testcase>
-<testcase name="shouldSee200AfterListAssetTypes()" classname="de.unibremen.informatik.swp.tests.AssetTypesApiTest" time="0.073">
+<testcase name="shouldSee200AfterListAssetTypes()" classname="de.unibremen.informatik.swp.tests.AssetTypesApiTest" time="0.059">
 <system-out><![CDATA[
 unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.AssetTypesApiTest]/[method:shouldSee200AfterListAssetTypes()]
 display-name: shouldSee200AfterListAssetTypes()
 ]]></system-out>
 </testcase>
-<testcase name="shouldSee204AfterActivateUser()" classname="de.unibremen.informatik.swp.tests.UsersApiTest" time="0.069">
+<testcase name="shouldSee204AfterActivateUser()" classname="de.unibremen.informatik.swp.tests.UsersApiTest" time="0.066">
 <system-out><![CDATA[
 unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.UsersApiTest]/[method:shouldSee204AfterActivateUser()]
 display-name: shouldSee204AfterActivateUser()
 ]]></system-out>
 </testcase>
-<testcase name="shouldSee200AfterListUsers()" classname="de.unibremen.informatik.swp.tests.UsersApiTest" time="0.108">
+<testcase name="shouldSee200AfterListUsers()" classname="de.unibremen.informatik.swp.tests.UsersApiTest" time="0.084">
 <system-out><![CDATA[
 unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.UsersApiTest]/[method:shouldSee200AfterListUsers()]
 display-name: shouldSee200AfterListUsers()
 ]]></system-out>
 </testcase>
-<testcase name="shouldSee404AfterUpdateAssetType()" classname="de.unibremen.informatik.swp.tests.AssetTypesApiTest" time="0.056">
+<testcase name="shouldSee404AfterUpdateAssetType()" classname="de.unibremen.informatik.swp.tests.AssetTypesApiTest" time="0.041">
 <system-out><![CDATA[
 unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.AssetTypesApiTest]/[method:shouldSee404AfterUpdateAssetType()]
 display-name: shouldSee404AfterUpdateAssetType()
 ]]></system-out>
 </testcase>
-<testcase name="shouldSee409AfterUpdateAsset()" classname="de.unibremen.informatik.swp.tests.AssetsApiTest" time="0.277">
+<testcase name="shouldSee409AfterUpdateAsset()" classname="de.unibremen.informatik.swp.tests.AssetsApiTest" time="0.297">
 <system-out><![CDATA[
 unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.AssetsApiTest]/[method:shouldSee409AfterUpdateAsset()]
 display-name: shouldSee409AfterUpdateAsset()
 ]]></system-out>
 </testcase>
-<testcase name="shouldSee200AfterUpdateLocation()" classname="de.unibremen.informatik.swp.tests.LocationsApiTest" time="0.113">
+<testcase name="shouldSee200AfterUpdateLocation()" classname="de.unibremen.informatik.swp.tests.LocationsApiTest" time="0.103">
 <system-out><![CDATA[
 unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.LocationsApiTest]/[method:shouldSee200AfterUpdateLocation()]
 display-name: shouldSee200AfterUpdateLocation()
 ]]></system-out>
 </testcase>
-<testcase name="shouldSee404AfterGetLocationById()" classname="de.unibremen.informatik.swp.tests.LocationsApiTest" time="0.071">
+<testcase name="shouldSee404AfterGetLocationById()" classname="de.unibremen.informatik.swp.tests.LocationsApiTest" time="0.037">
 <system-out><![CDATA[
 unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.LocationsApiTest]/[method:shouldSee404AfterGetLocationById()]
 display-name: shouldSee404AfterGetLocationById()
 ]]></system-out>
 </testcase>
-<testcase name="shouldSee409AfterCreateLocation()" classname="de.unibremen.informatik.swp.tests.LocationsApiTest" time="0.063">
+<testcase name="shouldSee409AfterCreateLocation()" classname="de.unibremen.informatik.swp.tests.LocationsApiTest" time="0.057">
 <system-out><![CDATA[
 unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.LocationsApiTest]/[method:shouldSee409AfterCreateLocation()]
 display-name: shouldSee409AfterCreateLocation()
 ]]></system-out>
 </testcase>
-<testcase name="shouldSee404ForNoneExistingAsset()" classname="de.unibremen.informatik.swp.tests.AssetManagementApiTest" time="0.651">
+<testcase name="shouldSee404ForNoneExistingAsset()" classname="de.unibremen.informatik.swp.tests.AssetManagementApiTest" time="0.547">
 <system-out><![CDATA[
 unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.AssetManagementApiTest]/[method:shouldSee404ForNoneExistingAsset()]
 display-name: shouldSee404ForNoneExistingAsset()
 ]]></system-out>
 </testcase>
-<testcase name="shouldSee404AfterGetUserById()" classname="de.unibremen.informatik.swp.tests.UsersApiTest" time="0.042">
+<testcase name="shouldSee404AfterGetUserById()" classname="de.unibremen.informatik.swp.tests.UsersApiTest" time="0.041">
 <system-out><![CDATA[
 unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.UsersApiTest]/[method:shouldSee404AfterGetUserById()]
 display-name: shouldSee404AfterGetUserById()
 ]]></system-out>
 </testcase>
-<testcase name="shouldSee200AfterGetCurrentUser()" classname="de.unibremen.informatik.swp.tests.AuthApiTest" time="0.047">
+<testcase name="shouldSee200AfterGetCurrentUser()" classname="de.unibremen.informatik.swp.tests.AuthApiTest" time="0.038">
 <system-out><![CDATA[
 unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.AuthApiTest]/[method:shouldSee200AfterGetCurrentUser()]
 display-name: shouldSee200AfterGetCurrentUser()
 ]]></system-out>
 </testcase>
-<testcase name="shouldSee200AfterListAssetsByLocationId()" classname="de.unibremen.informatik.swp.tests.AssetsListTest" time="0.287">
+<testcase name="shouldSee200AfterListAssetsByLocationId()" classname="de.unibremen.informatik.swp.tests.AssetsListTest" time="0.254">
 <system-out><![CDATA[
 unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.AssetsListTest]/[method:shouldSee200AfterListAssetsByLocationId()]
 display-name: shouldSee200AfterListAssetsByLocationId()
 ]]></system-out>
 </testcase>
-<testcase name="shouldSee201AfterCreateLocation()" classname="de.unibremen.informatik.swp.tests.LocationsApiTest" time="0.061">
+<testcase name="shouldSee201AfterCreateLocation()" classname="de.unibremen.informatik.swp.tests.LocationsApiTest" time="0.054">
 <system-out><![CDATA[
 unique-id: [engine:junit-jupiter]/[class:de.unibremen.informatik.swp.tests.LocationsApiTest]/[method:shouldSee201AfterCreateLocation()]
 display-name: shouldSee201AfterCreateLocation()
